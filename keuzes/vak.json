@@ -1,0 +1,72 @@
+{
+    "vakken2": [
+        {
+            "Naam": "Latijn"
+        },
+        {
+            "Naam": "Economische wetenschappen"
+        },
+        {
+            "Naam": "Sportwetenschappen"
+        },
+        {
+            "Naam": "Natuurwetenschappen"
+        },
+        {
+            "Naam": "Technologische wetenschappen"
+        },
+        {
+            "Naam": "Bedrijf en organisatie"
+        },
+        {
+            "Naam": "Sport"
+        },
+        {
+            "Naam": "Zorg en welzijn"
+        },
+        {
+            "Naam": "Maatschappij en welzijn"
+        },
+        {
+            "Naam": "Humane wetenschappen"
+        }
+    ],
+    "vakken3": [
+        {
+            "Naam3": "Latijn-moderne talen"
+        },
+        {
+            "Naam3": "Latijn-wiskunde talen"
+        },
+        {
+            "Naam3": "Economie-moderne talen"
+        },
+        {
+            "Naam3": "Economie-wiskunde"
+        },
+        {
+            "Naam3": "Sportwetenschappen"
+        },
+        {
+            "Naam3": "Wetenschappen-wiskunde"
+        },
+        {
+            "Naam3": "Informatica- en communicatiewetenschappen"
+        },
+        {
+            "Naam3": "Applicatie- en databeheer"
+        },
+        {
+            "Naam3": "Sportbegeleiding"
+        },
+        {
+            "Naam3": "Gezondheidszorg"
+        },
+        {
+            "Naam3": "Basiszorg en ondersteuning"
+        },
+        {
+            "Naam3": "Humane wetenschappen"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "vakken2": [
+        {
+            "Naam": "Latijn",
+            "doorstroom": [
+                {
+                    "Naam3": "Latijn-moderne talen"
+                },
+                {
+                    "Naam3": "Latijn-wiskunde talen"
+                }
+            ]
+        },
+        {
+            "Naam": "Economische wetenschappen",
+            "doorstroom": [
+                {
+                    "Naam3": "Economie-moderne talen"
+                },
+                {
+                    "Naam3": "Economie-wiskunde"
+                }
+            ]
+        },
+        {
+            "Naam": "Sportwetenschappen",
+            "doorstroom": [
+                {
+                    "Naam3": "Sportwetenschappen"
+                }
+            ]
+        },
+        {
+            "Naam": "Natuurwetenschappen",
+            "doorstroom": [
+                {
+                    "Naam3": "Wetenschappen-wiskunde"
+                }
+            ]
+        },
+        {
+            "Naam": "Technologische wetenschappen",
+            "doorstroom": [
+                {
+                    "Naam3": "Informatica- en communicatiewetenschappen"
+                }
+            ]
+        },
+        {
+            "Naam": "Bedrijf en organisatie",
+            "doorstroom": [
+                {
+                    "Naam3": "Applicatie- en databeheer"
+                }
+            ]
+        },
+        {
+            "Naam": "Sport",
+            "doorstroom": [
+                {
+                    "Naam3": "Sportbegeleiding"
+                }
+            ]
+        },
+        {
+            "Naam": "Zorg en welzijn",
+            "doorstroom": [
+                {
+                    "Naam3": "Gezondheidszorg"
+                }
+            ]
+        },
+        {
+            "Naam": "Maatschappij en welzijn",
+            "doorstroom": [
+                {
+                    "Naam3": "Basiszorg en ondersteuning"
+                }
+            ]
+        },
+        {
+            "Naam": "Humane wetenschappen",
+            "doorstroom": [
+                {
+                    "Naam3": "Humane wetenschappen"
+                }
+            ]
+        }
+    ] 
+}

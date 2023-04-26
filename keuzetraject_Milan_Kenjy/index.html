@@ -54,21 +54,131 @@
 	
 	<script>
 		fetch('vak.json')
-	   .then(response => response.json())
-	   .then(data => {
-		 const vakkenLijst = document.getElementById('vakken-lijst');
-		 data.vakken2.forEach(vak => {
-		   const vakItem = document.createElement('button');
-		   vakItem.textContent = vak.Naam;
-		   vakkenLijst.appendChild(vakItem);
-		 });
-		 const vakkenLijst3 = document.getElementById('vakken-lijst3');
-		 data.vakken3.forEach(vak => {
-		   const vakItem = document.createElement('button');
-		   vakItem.textContent = vak.Naam3;
-		   vakkenLijst3.appendChild(vakItem);
-		 });
-	   });
+  .then(response => response.json())
+  .then(data => {
+    const vakkenLijst = document.getElementById('vakken-lijst');
+    data.vakken2.forEach(vak => {
+      const vakItem = document.createElement('button');
+      vakItem.textContent = vak.Naam;
+     
+      if (vak.Naam === 'Latijn') {
+        vakItem.addEventListener('mouseover', () => {
+          const latijnModerneTalenButton = vakkenLijst3.querySelector('button:nth-of-type(1)');
+          const latijnWiskundeTalenButton = vakkenLijst3.querySelector('button:nth-of-type(2)');
+          latijnWiskundeTalenButton.style.backgroundColor = '#71a108';
+          latijnModerneTalenButton.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const latijnModerneTalenButton = vakkenLijst3.querySelector('button:nth-of-type(1)');
+          const latijnWiskundeTalenButton = vakkenLijst3.querySelector('button:nth-of-type(2)');
+          latijnWiskundeTalenButton.style.backgroundColor = '';
+          latijnModerneTalenButton.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Economische wetenschappen') {
+        vakItem.addEventListener('mouseover', () => {
+          const Economischetaal = vakkenLijst3.querySelector('button:nth-of-type(3)');
+          Economischetaal.style.backgroundColor = '#71a108';
+          const Economischewisk = vakkenLijst3.querySelector('button:nth-of-type(4)');
+          Economischewisk.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const Economischetaal = vakkenLijst3.querySelector('button:nth-of-type(3)');
+          Economischetaal.style.backgroundColor = '';
+          const Economischewisk = vakkenLijst3.querySelector('button:nth-of-type(4)');
+          Economischewisk.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Sportwetenschappen') {
+        vakItem.addEventListener('mouseover', () => {
+          const Sportwetenschappen = vakkenLijst3.querySelector('button:nth-of-type(5)');
+          Sportwetenschappen.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const Sportwetenschappen = vakkenLijst3.querySelector('button:nth-of-type(5)');
+          Sportwetenschappen.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Natuurwetenschappen') {
+        vakItem.addEventListener('mouseover', () => {
+          const Natuurwetenschappen = vakkenLijst3.querySelector('button:nth-of-type(6)');
+          Natuurwetenschappen.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const Natuurwetenschappen = vakkenLijst3.querySelector('button:nth-of-type(6)');
+          Natuurwetenschappen.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Technologische wetenschappen') {
+        vakItem.addEventListener('mouseover', () => {
+          const Tech = vakkenLijst3.querySelector('button:nth-of-type(7)');
+          Tech.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const Tech = vakkenLijst3.querySelector('button:nth-of-type(7)');
+          Tech.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Bedrijf en organisatie') {
+        vakItem.addEventListener('mouseover', () => {
+          const bedrijf = vakkenLijst3.querySelector('button:nth-of-type(8)');
+          bedrijf.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const bedrijf = vakkenLijst3.querySelector('button:nth-of-type(8)');
+          bedrijf.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Sport') {
+        vakItem.addEventListener('mouseover', () => {
+          const Sport = vakkenLijst3.querySelector('button:nth-of-type(9)');
+          Sport.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const Sport = vakkenLijst3.querySelector('button:nth-of-type(9)');
+          Sport.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Zorg en welzijn') {
+        vakItem.addEventListener('mouseover', () => {
+          const Zorg = vakkenLijst3.querySelector('button:nth-of-type(10)');
+          Zorg.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const Zorg = vakkenLijst3.querySelector('button:nth-of-type(10)');
+          Zorg.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Maatschappij en welzijn') {
+        vakItem.addEventListener('mouseover', () => {
+          const maat = vakkenLijst3.querySelector('button:nth-of-type(11)');
+          maat.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const maat = vakkenLijst3.querySelector('button:nth-of-type(11)');
+          maat.style.backgroundColor = '';
+        });
+      }
+      if (vak.Naam === 'Humane wetenschappen') {
+        vakItem.addEventListener('mouseover', () => {
+          const Humane = vakkenLijst3.querySelector('button:nth-of-type(12)');
+          Humane.style.backgroundColor = '#71a108';
+        });
+        vakItem.addEventListener('mouseout', () => {
+          const Humane = vakkenLijst3.querySelector('button:nth-of-type(12)');
+          Humane.style.backgroundColor = '';
+        });
+      }
+      vakkenLijst.appendChild(vakItem);
+    });
+
+    const vakkenLijst3 = document.getElementById('vakken-lijst3');
+    data.vakken3.forEach(vak => {
+      const vakItem = document.createElement('button');
+      vakItem.textContent = vak.Naam3;
+      vakkenLijst3.appendChild(vakItem);
+    });
+  });
 	</script>
 	  
 </body>
